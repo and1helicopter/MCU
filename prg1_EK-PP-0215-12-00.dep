@@ -1,0 +1,118 @@
+Dependencies for Project 'prg1', Target 'EK-PP-0215-12-00': (DO NOT MODIFY !)
+F (.\STARTUP\startup_stm32f429_439xx.s)(0x532C477A)(--cpu Cortex-M4.fp --apcs=interwork -I.\STARTUP -I.\SOURCE -I..\PRG1-I D:\FOTO\KEIL4\ARM\RV31\INC-I D:\FOTO\KEIL4\ARM\CMSIS\Include-I D:\FOTO\KEIL4\ARM\Inc\ST\STM32F4xx--list .\list\startup_stm32f429_439xx.lst --xref -o .\exec\startup_stm32f429_439xx.o --depend .\exec\startup_stm32f429_439xx.d)
+F (.\STARTUP\system_stm32f4xx.c)(0x5552F6D6)(-c --cpu Cortex-M4.fp -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I.\STARTUP -I.\PERIPH -I..\PRG1 -I.\SOURCE --no_integer_literal_pools-I D:\FOTO\KEIL4\ARM\RV31\INC-I D:\FOTO\KEIL4\ARM\CMSIS\Include-I D:\FOTO\KEIL4\ARM\Inc\ST\STM32F4xx-DEK_PP_0215_12_00 -DSTM32F429_439xx-o .\exec\system_stm32f4xx.o --list_dir ".\\LIST\\" --list --depend .\exec\system_stm32f4xx.d)
+I (STARTUP\stm32f4xx.h)(0x554B5FB1)
+I (STARTUP\core_cm4.h)(0x554868EB)
+I (D:\FOTO\KEIL4\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (.\STARTUP\core_cmInstr.h)(0x532C4C22)
+I (.\STARTUP\core_cmFunc.h)(0x532C4C22)
+I (.\STARTUP\core_cm4_simd.h)(0x532C4C22)
+I (STARTUP\system_stm32f4xx.h)(0x532C47BA)
+F (.\STARTUP\GPIOConfig12_00.c)(0x55545067)(-c --cpu Cortex-M4.fp -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I.\STARTUP -I.\PERIPH -I..\PRG1 -I.\SOURCE --no_integer_literal_pools-I D:\FOTO\KEIL4\ARM\RV31\INC-I D:\FOTO\KEIL4\ARM\CMSIS\Include-I D:\FOTO\KEIL4\ARM\Inc\ST\STM32F4xx-DEK_PP_0215_12_00 -DSTM32F429_439xx-o .\exec\gpioconfig12_00.o --list_dir ".\\LIST\\" --list --depend .\exec\gpioconfig12_00.d)
+I (STARTUP\stm32f4xx.h)(0x554B5FB1)
+I (STARTUP\core_cm4.h)(0x554868EB)
+I (D:\FOTO\KEIL4\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (.\STARTUP\core_cmInstr.h)(0x532C4C22)
+I (.\STARTUP\core_cmFunc.h)(0x532C4C22)
+I (.\STARTUP\core_cm4_simd.h)(0x532C4C22)
+I (STARTUP\system_stm32f4xx.h)(0x532C47BA)
+F (.\STARTUP\GPIOConfig12_02.c)(0x554B3E58)(-c --cpu Cortex-M4.fp -g -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I.\STARTUP -I.\PERIPH -I..\PRG1 -I.\SOURCE --no_integer_literal_pools-I D:\FOTO\KEIL4\ARM\RV31\INC-I D:\FOTO\KEIL4\ARM\CMSIS\Include-I D:\FOTO\KEIL4\ARM\Inc\ST\STM32F4xx-DSTM32F429_439xx-o .\exec\gpioconfig12_02.o --list_dir ".\\LIST\\" --list --omf_browse .\exec\gpioconfig12_02.crf --depend .\exec\gpioconfig12_02.d)
+I (STARTUP\stm32f4xx.h)(0x554B5FB1)
+I (STARTUP\core_cm4.h)(0x554868EB)
+I (D:\FOTO\KEIL4\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (.\STARTUP\core_cmInstr.h)(0x532C4C22)
+I (.\STARTUP\core_cmFunc.h)(0x532C4C22)
+I (.\STARTUP\core_cm4_simd.h)(0x532C4C22)
+I (STARTUP\system_stm32f4xx.h)(0x532C47BA)
+F (.\SOURCE\main.c)(0x55547BB1)(-c --cpu Cortex-M4.fp -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I.\STARTUP -I.\PERIPH -I..\PRG1 -I.\SOURCE --no_integer_literal_pools-I D:\FOTO\KEIL4\ARM\RV31\INC-I D:\FOTO\KEIL4\ARM\CMSIS\Include-I D:\FOTO\KEIL4\ARM\Inc\ST\STM32F4xx-DEK_PP_0215_12_00 -DSTM32F429_439xx-o .\exec\main.o --list_dir ".\\LIST\\" --list --depend .\exec\main.d)
+I (.\STARTUP\stm32f4xx.h)(0x554B5FB1)
+I (.\STARTUP\core_cm4.h)(0x554868EB)
+I (D:\FOTO\KEIL4\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (.\STARTUP\core_cmInstr.h)(0x532C4C22)
+I (.\STARTUP\core_cmFunc.h)(0x532C4C22)
+I (.\STARTUP\core_cm4_simd.h)(0x532C4C22)
+I (.\STARTUP\system_stm32f4xx.h)(0x532C47BA)
+I (SOURCE\global.h)(0x55547D82)
+I (.\PERIPH\pult.h)(0x554C9019)
+I (.\PERIPH\usart.h)(0x554B3E6E)
+I (.\PERIPH\rtc.h)(0x554CA032)
+I (.\PERIPH\IntADC.h)(0x5551C00D)
+I (.\PERIPH\Extmem.h)(0x5554649D)
+F (.\LIST\gpioconfig.txt)(0x5551DB22)()
+F (.\LIST\main.txt)(0x55547D82)()
+F (.\LIST\pult.txt)(0x55547D83)()
+F (.\LIST\usart.txt)(0x55547D83)()
+F (.\LIST\prg1.map)(0x5551FDAE)()
+F (.\LIST\rtc.txt)(0x55547D84)()
+F (.\PERIPH\pult.c)(0x5554702D)(-c --cpu Cortex-M4.fp -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I.\STARTUP -I.\PERIPH -I..\PRG1 -I.\SOURCE --no_integer_literal_pools-I D:\FOTO\KEIL4\ARM\RV31\INC-I D:\FOTO\KEIL4\ARM\CMSIS\Include-I D:\FOTO\KEIL4\ARM\Inc\ST\STM32F4xx-DEK_PP_0215_12_00 -DSTM32F429_439xx-o .\exec\pult.o --list_dir ".\\LIST\\" --list --depend .\exec\pult.d)
+I (D:\FOTO\KEIL4\ARM\ARMCC\include\stdio.h)(0x51C80BA4)
+I (.\STARTUP\stm32f4xx.h)(0x554B5FB1)
+I (.\STARTUP\core_cm4.h)(0x554868EB)
+I (D:\FOTO\KEIL4\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (.\STARTUP\core_cmInstr.h)(0x532C4C22)
+I (.\STARTUP\core_cmFunc.h)(0x532C4C22)
+I (.\STARTUP\core_cm4_simd.h)(0x532C4C22)
+I (.\STARTUP\system_stm32f4xx.h)(0x532C47BA)
+I (.\SOURCE\global.h)(0x55547D82)
+I (.\PERIPH\pult.h)(0x554C9019)
+I (.\PERIPH\usart.h)(0x554B3E6E)
+I (.\PERIPH\rtc.h)(0x554CA032)
+I (.\PERIPH\IntADC.h)(0x5551C00D)
+I (.\PERIPH\Extmem.h)(0x5554649D)
+F (.\PERIPH\usart.c)(0x554B3E3D)(-c --cpu Cortex-M4.fp -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I.\STARTUP -I.\PERIPH -I..\PRG1 -I.\SOURCE --no_integer_literal_pools-I D:\FOTO\KEIL4\ARM\RV31\INC-I D:\FOTO\KEIL4\ARM\CMSIS\Include-I D:\FOTO\KEIL4\ARM\Inc\ST\STM32F4xx-DEK_PP_0215_12_00 -DSTM32F429_439xx-o .\exec\usart.o --list_dir ".\\LIST\\" --list --depend .\exec\usart.d)
+I (.\STARTUP\stm32f4xx.h)(0x554B5FB1)
+I (.\STARTUP\core_cm4.h)(0x554868EB)
+I (D:\FOTO\KEIL4\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (.\STARTUP\core_cmInstr.h)(0x532C4C22)
+I (.\STARTUP\core_cmFunc.h)(0x532C4C22)
+I (.\STARTUP\core_cm4_simd.h)(0x532C4C22)
+I (.\STARTUP\system_stm32f4xx.h)(0x532C47BA)
+I (.\SOURCE\global.h)(0x55547D82)
+I (.\PERIPH\pult.h)(0x554C9019)
+I (.\PERIPH\usart.h)(0x554B3E6E)
+I (.\PERIPH\rtc.h)(0x554CA032)
+I (.\PERIPH\IntADC.h)(0x5551C00D)
+I (.\PERIPH\Extmem.h)(0x5554649D)
+F (.\PERIPH\rtc.c)(0x554CAE8E)(-c --cpu Cortex-M4.fp -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I.\STARTUP -I.\PERIPH -I..\PRG1 -I.\SOURCE --no_integer_literal_pools-I D:\FOTO\KEIL4\ARM\RV31\INC-I D:\FOTO\KEIL4\ARM\CMSIS\Include-I D:\FOTO\KEIL4\ARM\Inc\ST\STM32F4xx-DEK_PP_0215_12_00 -DSTM32F429_439xx-o .\exec\rtc.o --list_dir ".\\LIST\\" --list --depend .\exec\rtc.d)
+I (.\STARTUP\stm32f4xx.h)(0x554B5FB1)
+I (.\STARTUP\core_cm4.h)(0x554868EB)
+I (D:\FOTO\KEIL4\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (.\STARTUP\core_cmInstr.h)(0x532C4C22)
+I (.\STARTUP\core_cmFunc.h)(0x532C4C22)
+I (.\STARTUP\core_cm4_simd.h)(0x532C4C22)
+I (.\STARTUP\system_stm32f4xx.h)(0x532C47BA)
+I (.\SOURCE\global.h)(0x55547D82)
+I (.\PERIPH\pult.h)(0x554C9019)
+I (.\PERIPH\usart.h)(0x554B3E6E)
+I (.\PERIPH\rtc.h)(0x554CA032)
+I (.\PERIPH\IntADC.h)(0x5551C00D)
+I (.\PERIPH\Extmem.h)(0x5554649D)
+F (.\PERIPH\IntADC.c)(0x5551C069)(-c --cpu Cortex-M4.fp -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I.\STARTUP -I.\PERIPH -I..\PRG1 -I.\SOURCE --no_integer_literal_pools-I D:\FOTO\KEIL4\ARM\RV31\INC-I D:\FOTO\KEIL4\ARM\CMSIS\Include-I D:\FOTO\KEIL4\ARM\Inc\ST\STM32F4xx-DEK_PP_0215_12_00 -DSTM32F429_439xx-o .\exec\intadc.o --list_dir ".\\LIST\\" --list --depend .\exec\intadc.d)
+I (.\STARTUP\stm32f4xx.h)(0x554B5FB1)
+I (.\STARTUP\core_cm4.h)(0x554868EB)
+I (D:\FOTO\KEIL4\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (.\STARTUP\core_cmInstr.h)(0x532C4C22)
+I (.\STARTUP\core_cmFunc.h)(0x532C4C22)
+I (.\STARTUP\core_cm4_simd.h)(0x532C4C22)
+I (.\STARTUP\system_stm32f4xx.h)(0x532C47BA)
+I (.\SOURCE\global.h)(0x55547D82)
+I (.\PERIPH\pult.h)(0x554C9019)
+I (.\PERIPH\usart.h)(0x554B3E6E)
+I (.\PERIPH\rtc.h)(0x554CA032)
+I (.\PERIPH\IntADC.h)(0x5551C00D)
+I (.\PERIPH\Extmem.h)(0x5554649D)
+F (.\PERIPH\Extmem.c)(0x55547CC2)(-c --cpu Cortex-M4.fp -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I.\STARTUP -I.\PERIPH -I..\PRG1 -I.\SOURCE --no_integer_literal_pools-I D:\FOTO\KEIL4\ARM\RV31\INC-I D:\FOTO\KEIL4\ARM\CMSIS\Include-I D:\FOTO\KEIL4\ARM\Inc\ST\STM32F4xx-DEK_PP_0215_12_00 -DSTM32F429_439xx-o .\exec\extmem.o --list_dir ".\\LIST\\" --list --depend .\exec\extmem.d)
+I (.\STARTUP\stm32f4xx.h)(0x554B5FB1)
+I (.\STARTUP\core_cm4.h)(0x554868EB)
+I (D:\FOTO\KEIL4\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (.\STARTUP\core_cmInstr.h)(0x532C4C22)
+I (.\STARTUP\core_cmFunc.h)(0x532C4C22)
+I (.\STARTUP\core_cm4_simd.h)(0x532C4C22)
+I (.\STARTUP\system_stm32f4xx.h)(0x532C47BA)
+I (.\SOURCE\global.h)(0x55547D82)
+I (.\PERIPH\pult.h)(0x554C9019)
+I (.\PERIPH\usart.h)(0x554B3E6E)
+I (.\PERIPH\rtc.h)(0x554CA032)
+I (.\PERIPH\IntADC.h)(0x5551C00D)
+I (.\PERIPH\Extmem.h)(0x5554649D)
+F (.\Docs\EK-PP-0215-12-00.txt)(0x55533A2D)()

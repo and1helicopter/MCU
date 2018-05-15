@@ -1,0 +1,95 @@
+#include "stm32f4xx.h"
+#include "global.h"
+
+int main() {
+int i;	
+	for (i=0; i<240; i++) NVIC->IP[i] = 0xF0;										/* Ставим низший приоритет для всех прерываний	*/
+	SystemCoreClockUpdate();																		/* Расчет тактовой частоты процессора						*/
+	SysTick_Config(SystemCoreClock / 8 / 1000, SysTick_Prty);		/* 1000 раз / сек																*/
+
+	RTC_OK = InitRTC(0x01000000);																/* Инициализация часов													*/
+
+	/* Инициализация внешней энергонезависимой памяти						*/
+	InitFram();
+	/* Загрузка параметров																			*/
+	StdPrms.ParamsLoaded = LoadParamsProc();
+	InitParams(StdPrms.ParamsLoaded);
+	/*Инициализация осциллографирования*/
+	InitOscil(&SavePrms.Oscil, &PrgData.OscilCmnd, (uint16_t*)&PrgData, (uint16_t*)&ExtMem);
+
+	
+	/* Инициализация пульта																			*/	
+	InitPult();
+	
+
+	for (i=0; i<8; i++) {SavePrms.UartParams[i] = 0x01010400;}	/* Addr = 1, 115200, odd, 1 stop-bit	*/
+
+#ifdef HEAD2
+	InitUsart(X13,GetSavedUartParams(X13), ModbusStdProc);
+#else
+	InitUsart(X13, Baud9600 | NoParity | OneStopBit, RecieveTermodat);
+#endif
+	
+  InitUsart(X13, Baud115200 | OddParity | OneStopBit, ModbusStdProc);
+	InitUsart(X6, Baud115200 | OddParity | OneStopBit, ModbusStdProc);	
+
+	InitUsart(X8_9, Baud115200 | OddParity | OneStopBit, RecieveSlaveData);	
+	InitUsart(X14_15, Baud115200 | OddParity | OneStopBit, RecieveDriverData);		
+	InitUsart(X16_17, Baud115200 | OddParity | OneStopBit, RecieveDriverData);	
+
+	
+//	
+//InitCAN1();
+//	
+	TIM8_Init(PWMFreq);
+	
+	InitExtMem();
+	InitTrgExtADC(PWMFreq * ADCxCycle);		/* Обязательно после TIM8_Init(PWMfreq);	*/
+	
+	InitIntADC();	
+	TIM1_Init(PWMFreq);
+//	
+//TIM2_TIM5_Init();
+
+	/*	Считываем часы реального времени				*/
+	ReadRTC(NotWaitClock,&EvPrms.RTC_Date,&EvPrms.RTC_Time);
+	/* Событие RESET														*/
+	EvPrms.EventCode = 0x0053;
+	
+	while (1)	{
+		Display();
+	}
+}
+
+/* Прерывание системного таймера	*/
+void SysTick_Handler() {
+static int LedCount = 0;
+			 int i;
+	
+#if defined (LedToggle)	
+	if (LedCount) {LedCount--;} else {
+//		LedToggle(); 
+		LedCount = 499; 
+#ifndef HEAD2
+		TermodatCycle(X13);
+#endif		
+	}
+#endif		
+	
+/*  Проверяем на установку нового времени		*/
+	if (StdPrms.SetDate && StdPrms.SetTime) {PackRTC(StdPrms.SetTime,StdPrms.SetDate); StdPrms.SetTime = StdPrms.SetDate = 0;}
+
+/* 	Установка нулей датчиков	 							*/
+	SetZeroChs(&StdPrms.SetZeroCmd);
+	
+
+#ifdef PultEnable
+  PultUpdate();
+#endif
+	
+}
+
+
+
+
+
