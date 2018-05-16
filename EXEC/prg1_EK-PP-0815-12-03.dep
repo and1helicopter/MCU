@@ -41,7 +41,7 @@ I (.\PERIPH\mcan.h)(0x57D2B3A0)
 I (SOURCE\Protocol.h)(0x57D2B3A0)
 I (SOURCE\StdFunc.h)(0x57D2B3A0)
 I (SOURCE\Termodat.h)(0x57D2B3A0)
-I (.\PERIPH\Oscil.h)(0x5AFA7D7F)
+I (.\PERIPH\Oscil.h)(0x5AFC0F2A)
 I (SOURCE\Metro.h)(0x59019F74)
 F (.\SOURCE\Metro.c)(0x5AFA8432)(--c99 -c --cpu Cortex-M4.fp -O2 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I .\STARTUP -I .\PERIPH -I ..\PRG1 -I .\SOURCE --no_integer_literal_pools-IF:\Program\Keil_v5\ARM\RV31\INC-IF:\Program\Keil_v5\ARM\CMSIS\Include-IF:\Program\Keil_v5\ARM\INC\ST\STM32F4xx-D__UVISION_VERSION="524" -DEK_PP_0815_12_03 -DSTM32F429_439xx-o .\exec\metro.o --list_dir ".\\LIST\\" --list --omf_browse .\exec\metro.crf --depend .\exec\metro.d)
 I (.\STARTUP\stm32f4xx.h)(0x5AFA81C0)
@@ -64,7 +64,7 @@ I (.\PERIPH\mcan.h)(0x57D2B3A0)
 I (SOURCE\Protocol.h)(0x57D2B3A0)
 I (SOURCE\StdFunc.h)(0x57D2B3A0)
 I (SOURCE\Termodat.h)(0x57D2B3A0)
-I (.\PERIPH\Oscil.h)(0x5AFA7D7F)
+I (.\PERIPH\Oscil.h)(0x5AFC0F2A)
 I (SOURCE\Metro.h)(0x59019F74)
 I (F:\Program\Keil_v5\ARM\ARMCC\include\Math.h)(0x588BC994)
 F (.\SOURCE\IntPrty.h)(0x57D2B3A0)()
@@ -89,7 +89,7 @@ I (.\PERIPH\mcan.h)(0x57D2B3A0)
 I (SOURCE\Protocol.h)(0x57D2B3A0)
 I (SOURCE\StdFunc.h)(0x57D2B3A0)
 I (SOURCE\Termodat.h)(0x57D2B3A0)
-I (.\PERIPH\Oscil.h)(0x5AFA7D7F)
+I (.\PERIPH\Oscil.h)(0x5AFC0F2A)
 I (SOURCE\Metro.h)(0x59019F74)
 F (.\SOURCE\Menu.c)(0x59030569)(--c99 -c --cpu Cortex-M4.fp -O2 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I .\STARTUP -I .\PERIPH -I ..\PRG1 -I .\SOURCE --no_integer_literal_pools-IF:\Program\Keil_v5\ARM\RV31\INC-IF:\Program\Keil_v5\ARM\CMSIS\Include-IF:\Program\Keil_v5\ARM\INC\ST\STM32F4xx-D__UVISION_VERSION="524" -DEK_PP_0815_12_03 -DSTM32F429_439xx-o .\exec\menu.o --list_dir ".\\LIST\\" --list --omf_browse .\exec\menu.crf --depend .\exec\menu.d)
 I (F:\Program\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588BC994)
@@ -114,7 +114,7 @@ I (.\PERIPH\mcan.h)(0x57D2B3A0)
 I (SOURCE\Protocol.h)(0x57D2B3A0)
 I (SOURCE\StdFunc.h)(0x57D2B3A0)
 I (SOURCE\Termodat.h)(0x57D2B3A0)
-I (.\PERIPH\Oscil.h)(0x5AFA7D7F)
+I (.\PERIPH\Oscil.h)(0x5AFC0F2A)
 I (SOURCE\Metro.h)(0x59019F74)
 I (SOURCE\menu.h)(0x58171552)
 F (.\SOURCE\menu.h)(0x58171552)()
@@ -139,7 +139,7 @@ I (.\PERIPH\mcan.h)(0x57D2B3A0)
 I (SOURCE\Protocol.h)(0x57D2B3A0)
 I (SOURCE\StdFunc.h)(0x57D2B3A0)
 I (SOURCE\Termodat.h)(0x57D2B3A0)
-I (.\PERIPH\Oscil.h)(0x5AFA7D7F)
+I (.\PERIPH\Oscil.h)(0x5AFC0F2A)
 I (SOURCE\Metro.h)(0x59019F74)
 F (.\SOURCE\Termodat.c)(0x57D2B3A0)(--c99 -c --cpu Cortex-M4.fp -O2 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I .\STARTUP -I .\PERIPH -I ..\PRG1 -I .\SOURCE --no_integer_literal_pools-IF:\Program\Keil_v5\ARM\RV31\INC-IF:\Program\Keil_v5\ARM\CMSIS\Include-IF:\Program\Keil_v5\ARM\INC\ST\STM32F4xx-D__UVISION_VERSION="524" -DEK_PP_0815_12_03 -DSTM32F429_439xx-o .\exec\termodat.o --list_dir ".\\LIST\\" --list --omf_browse .\exec\termodat.crf --depend .\exec\termodat.d)
 I (.\STARTUP\stm32f4xx.h)(0x5AFA81C0)
@@ -162,23 +162,23 @@ I (.\PERIPH\mcan.h)(0x57D2B3A0)
 I (SOURCE\Protocol.h)(0x57D2B3A0)
 I (SOURCE\StdFunc.h)(0x57D2B3A0)
 I (SOURCE\Termodat.h)(0x57D2B3A0)
-I (.\PERIPH\Oscil.h)(0x5AFA7D7F)
+I (.\PERIPH\Oscil.h)(0x5AFC0F2A)
 I (SOURCE\Metro.h)(0x59019F74)
 F (.\LIST\gpioconfig.txt)(0x00000000)()
-F (.\LIST\main.txt)(0x5AFA847A)()
-F (.\LIST\pult.txt)(0x5AFA8484)()
-F (.\LIST\usart.txt)(0x5AFA8486)()
-F (.\LIST\rtc.txt)(0x5AFA8487)()
-F (.\LIST\extmemadc.txt)(0x5AFA8489)()
-F (.\LIST\metro.txt)(0x5AFA847C)()
-F (.\LIST\intadc.txt)(0x5AFA8488)()
+F (.\LIST\main.txt)(0x5AFC11FF)()
+F (.\LIST\pult.txt)(0x5AFC1205)()
+F (.\LIST\usart.txt)(0x5AFC1206)()
+F (.\LIST\rtc.txt)(0x5AFC1207)()
+F (.\LIST\extmemadc.txt)(0x5AFC1209)()
+F (.\LIST\metro.txt)(0x5AFC1200)()
+F (.\LIST\intadc.txt)(0x5AFC1208)()
 F (.\LIST\prg1_12_02.map)(0x00000000)()
-F (.\LIST\fram.txt)(0x5AFA848A)()
-F (.\LIST\stdfunc.txt)(0x5AFA847E)()
-F (.\LIST\menu.txt)(0x5AFA847F)()
-F (.\LIST\termodat.txt)(0x5AFA8482)()
-F (.\LIST\oscil.txt)(0x5AFA8483)()
-F (.\PERIPH\Oscil.c)(0x5AF98F8C)(--c99 -c --cpu Cortex-M4.fp -O2 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I .\STARTUP -I .\PERIPH -I ..\PRG1 -I .\SOURCE --no_integer_literal_pools-IF:\Program\Keil_v5\ARM\RV31\INC-IF:\Program\Keil_v5\ARM\CMSIS\Include-IF:\Program\Keil_v5\ARM\INC\ST\STM32F4xx-D__UVISION_VERSION="524" -DEK_PP_0815_12_03 -DSTM32F429_439xx-o .\exec\oscil.o --list_dir ".\\LIST\\" --list --omf_browse .\exec\oscil.crf --depend .\exec\oscil.d)
+F (.\LIST\fram.txt)(0x5AFC1209)()
+F (.\LIST\stdfunc.txt)(0x5AFC1201)()
+F (.\LIST\menu.txt)(0x5AFC1202)()
+F (.\LIST\termodat.txt)(0x5AFC1204)()
+F (.\LIST\oscil.txt)(0x5AFC1205)()
+F (.\PERIPH\Oscil.c)(0x5AFC11FA)(--c99 -c --cpu Cortex-M4.fp -O2 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I .\STARTUP -I .\PERIPH -I ..\PRG1 -I .\SOURCE --no_integer_literal_pools-IF:\Program\Keil_v5\ARM\RV31\INC-IF:\Program\Keil_v5\ARM\CMSIS\Include-IF:\Program\Keil_v5\ARM\INC\ST\STM32F4xx-D__UVISION_VERSION="524" -DEK_PP_0815_12_03 -DSTM32F429_439xx-o .\exec\oscil.o --list_dir ".\\LIST\\" --list --omf_browse .\exec\oscil.crf --depend .\exec\oscil.d)
 I (.\STARTUP\stm32f4xx.h)(0x5AFA81C0)
 I (.\STARTUP\core_cm4.h)(0x57D2B3A0)
 I (F:\Program\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BC994)
@@ -199,7 +199,7 @@ I (.\PERIPH\mcan.h)(0x57D2B3A0)
 I (.\SOURCE\Protocol.h)(0x57D2B3A0)
 I (.\SOURCE\StdFunc.h)(0x57D2B3A0)
 I (.\SOURCE\Termodat.h)(0x57D2B3A0)
-I (.\PERIPH\Oscil.h)(0x5AFA7D7F)
+I (.\PERIPH\Oscil.h)(0x5AFC0F2A)
 I (.\SOURCE\Metro.h)(0x59019F74)
 I (F:\Program\Keil_v5\ARM\ARMCC\include\math.h)(0x588BC994)
 F (.\PERIPH\pult.c)(0x57D2B3A0)(--c99 -c --cpu Cortex-M4.fp -O2 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I .\STARTUP -I .\PERIPH -I ..\PRG1 -I .\SOURCE --no_integer_literal_pools-IF:\Program\Keil_v5\ARM\RV31\INC-IF:\Program\Keil_v5\ARM\CMSIS\Include-IF:\Program\Keil_v5\ARM\INC\ST\STM32F4xx-D__UVISION_VERSION="524" -DEK_PP_0815_12_03 -DSTM32F429_439xx-o .\exec\pult.o --list_dir ".\\LIST\\" --list --omf_browse .\exec\pult.crf --depend .\exec\pult.d)
@@ -225,7 +225,7 @@ I (.\PERIPH\mcan.h)(0x57D2B3A0)
 I (.\SOURCE\Protocol.h)(0x57D2B3A0)
 I (.\SOURCE\StdFunc.h)(0x57D2B3A0)
 I (.\SOURCE\Termodat.h)(0x57D2B3A0)
-I (.\PERIPH\Oscil.h)(0x5AFA7D7F)
+I (.\PERIPH\Oscil.h)(0x5AFC0F2A)
 I (.\SOURCE\Metro.h)(0x59019F74)
 F (.\PERIPH\usart.c)(0x57DA94AC)(--c99 -c --cpu Cortex-M4.fp -O2 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I .\STARTUP -I .\PERIPH -I ..\PRG1 -I .\SOURCE --no_integer_literal_pools-IF:\Program\Keil_v5\ARM\RV31\INC-IF:\Program\Keil_v5\ARM\CMSIS\Include-IF:\Program\Keil_v5\ARM\INC\ST\STM32F4xx-D__UVISION_VERSION="524" -DEK_PP_0815_12_03 -DSTM32F429_439xx-o .\exec\usart.o --list_dir ".\\LIST\\" --list --omf_browse .\exec\usart.crf --depend .\exec\usart.d)
 I (.\STARTUP\stm32f4xx.h)(0x5AFA81C0)
@@ -248,7 +248,7 @@ I (.\PERIPH\mcan.h)(0x57D2B3A0)
 I (.\SOURCE\Protocol.h)(0x57D2B3A0)
 I (.\SOURCE\StdFunc.h)(0x57D2B3A0)
 I (.\SOURCE\Termodat.h)(0x57D2B3A0)
-I (.\PERIPH\Oscil.h)(0x5AFA7D7F)
+I (.\PERIPH\Oscil.h)(0x5AFC0F2A)
 I (.\SOURCE\Metro.h)(0x59019F74)
 F (.\PERIPH\rtc.c)(0x5AFA81C1)(--c99 -c --cpu Cortex-M4.fp -O2 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I .\STARTUP -I .\PERIPH -I ..\PRG1 -I .\SOURCE --no_integer_literal_pools-IF:\Program\Keil_v5\ARM\RV31\INC-IF:\Program\Keil_v5\ARM\CMSIS\Include-IF:\Program\Keil_v5\ARM\INC\ST\STM32F4xx-D__UVISION_VERSION="524" -DEK_PP_0815_12_03 -DSTM32F429_439xx-o .\exec\rtc.o --list_dir ".\\LIST\\" --list --omf_browse .\exec\rtc.crf --depend .\exec\rtc.d)
 I (.\STARTUP\stm32f4xx.h)(0x5AFA81C0)
@@ -271,7 +271,7 @@ I (.\PERIPH\mcan.h)(0x57D2B3A0)
 I (.\SOURCE\Protocol.h)(0x57D2B3A0)
 I (.\SOURCE\StdFunc.h)(0x57D2B3A0)
 I (.\SOURCE\Termodat.h)(0x57D2B3A0)
-I (.\PERIPH\Oscil.h)(0x5AFA7D7F)
+I (.\PERIPH\Oscil.h)(0x5AFC0F2A)
 I (.\SOURCE\Metro.h)(0x59019F74)
 F (.\PERIPH\IntADC.c)(0x57D2B3A0)(--c99 -c --cpu Cortex-M4.fp -O2 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I .\STARTUP -I .\PERIPH -I ..\PRG1 -I .\SOURCE --no_integer_literal_pools-IF:\Program\Keil_v5\ARM\RV31\INC-IF:\Program\Keil_v5\ARM\CMSIS\Include-IF:\Program\Keil_v5\ARM\INC\ST\STM32F4xx-D__UVISION_VERSION="524" -DEK_PP_0815_12_03 -DSTM32F429_439xx-o .\exec\intadc.o --list_dir ".\\LIST\\" --list --omf_browse .\exec\intadc.crf --depend .\exec\intadc.d)
 I (.\STARTUP\stm32f4xx.h)(0x5AFA81C0)
@@ -294,7 +294,7 @@ I (.\PERIPH\mcan.h)(0x57D2B3A0)
 I (.\SOURCE\Protocol.h)(0x57D2B3A0)
 I (.\SOURCE\StdFunc.h)(0x57D2B3A0)
 I (.\SOURCE\Termodat.h)(0x57D2B3A0)
-I (.\PERIPH\Oscil.h)(0x5AFA7D7F)
+I (.\PERIPH\Oscil.h)(0x5AFC0F2A)
 I (.\SOURCE\Metro.h)(0x59019F74)
 F (.\PERIPH\Extmemadc.c)(0x57FF71C8)(--c99 -c --cpu Cortex-M4.fp -O2 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I .\STARTUP -I .\PERIPH -I ..\PRG1 -I .\SOURCE --no_integer_literal_pools-IF:\Program\Keil_v5\ARM\RV31\INC-IF:\Program\Keil_v5\ARM\CMSIS\Include-IF:\Program\Keil_v5\ARM\INC\ST\STM32F4xx-D__UVISION_VERSION="524" -DEK_PP_0815_12_03 -DSTM32F429_439xx-o .\exec\extmemadc.o --list_dir ".\\LIST\\" --list --omf_browse .\exec\extmemadc.crf --depend .\exec\extmemadc.d)
 I (.\STARTUP\stm32f4xx.h)(0x5AFA81C0)
@@ -317,7 +317,7 @@ I (.\PERIPH\mcan.h)(0x57D2B3A0)
 I (.\SOURCE\Protocol.h)(0x57D2B3A0)
 I (.\SOURCE\StdFunc.h)(0x57D2B3A0)
 I (.\SOURCE\Termodat.h)(0x57D2B3A0)
-I (.\PERIPH\Oscil.h)(0x5AFA7D7F)
+I (.\PERIPH\Oscil.h)(0x5AFC0F2A)
 I (.\SOURCE\Metro.h)(0x59019F74)
 I (F:\Program\Keil_v5\ARM\ARMCC\include\math.h)(0x588BC994)
 F (.\PERIPH\fram.c)(0x57FF7DFE)(--c99 -c --cpu Cortex-M4.fp -O2 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I .\STARTUP -I .\PERIPH -I ..\PRG1 -I .\SOURCE --no_integer_literal_pools-IF:\Program\Keil_v5\ARM\RV31\INC-IF:\Program\Keil_v5\ARM\CMSIS\Include-IF:\Program\Keil_v5\ARM\INC\ST\STM32F4xx-D__UVISION_VERSION="524" -DEK_PP_0815_12_03 -DSTM32F429_439xx-o .\exec\fram.o --list_dir ".\\LIST\\" --list --omf_browse .\exec\fram.crf --depend .\exec\fram.d)
@@ -341,7 +341,7 @@ I (.\PERIPH\mcan.h)(0x57D2B3A0)
 I (.\SOURCE\Protocol.h)(0x57D2B3A0)
 I (.\SOURCE\StdFunc.h)(0x57D2B3A0)
 I (.\SOURCE\Termodat.h)(0x57D2B3A0)
-I (.\PERIPH\Oscil.h)(0x5AFA7D7F)
+I (.\PERIPH\Oscil.h)(0x5AFC0F2A)
 I (.\SOURCE\Metro.h)(0x59019F74)
 F (.\PERIPH\mcan.c)(0x57D69CCC)(--c99 -c --cpu Cortex-M4.fp -O2 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\LIST\\" -I .\STARTUP -I .\PERIPH -I ..\PRG1 -I .\SOURCE --no_integer_literal_pools-IF:\Program\Keil_v5\ARM\RV31\INC-IF:\Program\Keil_v5\ARM\CMSIS\Include-IF:\Program\Keil_v5\ARM\INC\ST\STM32F4xx-D__UVISION_VERSION="524" -DEK_PP_0815_12_03 -DSTM32F429_439xx-o .\exec\mcan.o --list_dir ".\\LIST\\" --list --omf_browse .\exec\mcan.crf --depend .\exec\mcan.d)
 I (.\STARTUP\stm32f4xx.h)(0x5AFA81C0)
@@ -364,6 +364,6 @@ I (.\PERIPH\mcan.h)(0x57D2B3A0)
 I (.\SOURCE\Protocol.h)(0x57D2B3A0)
 I (.\SOURCE\StdFunc.h)(0x57D2B3A0)
 I (.\SOURCE\Termodat.h)(0x57D2B3A0)
-I (.\PERIPH\Oscil.h)(0x5AFA7D7F)
+I (.\PERIPH\Oscil.h)(0x5AFC0F2A)
 I (.\SOURCE\Metro.h)(0x59019F74)
 F (.\Docs\EK-PP-0215-12-00.txt)(0x57D2B3A0)()

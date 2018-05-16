@@ -8488,12 +8488,11 @@ typedef struct  {
 	uint16_t  OscilHistoryPercent; 				
 	uint16_t  OscilFreqDiv;							  
 	uint16_t  OscilEnable;								
-  
+  uint16_t  OscilSizePercent;           
+
 	uint8_t		OscilChNumName[32][32]; 		
 	uint8_t 	OscilComtradeConfig[1392];	
-  
-  uint16_t  OscilSizePercent;           
-  
+   
 } OscilConfig_type;
 
 typedef struct {								  
@@ -8512,8 +8511,8 @@ typedef struct {
 	uint16_t  OscilNewConfig[48];	  
 	
 	uint32_t  OscilMemorySize;      
-	uint16_t  OscilStatusLoad;
-  uint16_t  Padding[1];           
+	uint16_t  OscilStatusLoad;			
+  uint16_t  Padding = 39993;   		
   uint32_t  OscilLenght;          
   uint32_t  OscilRemainingCount;  
 } OscilCmnd_type;
@@ -9136,24 +9135,24 @@ int  TempTime;
 	if (((RTC_TypeDef *) (((uint32_t)0x40000000) + 0x2800))->ISR & ((uint32_t)0x00000010)) return 1;
   
   {	 
-    TempTime = 	 ("09:56:06"[7] - 0x30) 			 | (("09:56:06"[6] - 0x30) << 4) |
-                (("09:56:06"[4] - 0x30) << 8)  | (("09:56:06"[3] - 0x30) << 12)|
-                (("09:56:06"[1] - 0x30) << 16) | (("09:56:06"[0] - 0x30) << 20);
+    TempTime = 	 ("14:12:07"[7] - 0x30) 			 | (("14:12:07"[6] - 0x30) << 4) |
+                (("14:12:07"[4] - 0x30) << 8)  | (("14:12:07"[3] - 0x30) << 12)|
+                (("14:12:07"[1] - 0x30) << 16) | (("14:12:07"[0] - 0x30) << 20);
     
-    TempDate = 	("May 15 2018"[5] - 0x30) | (("May 15 2018"[10] - 0x30) << 16) | (("May 15 2018"[9] - 0x30) << 20);
-    if ("May 15 2018"[4] != 0x20) TempDate |= (("May 15 2018"[4] - 0x30) << 4);
+    TempDate = 	("May 16 2018"[5] - 0x30) | (("May 16 2018"[10] - 0x30) << 16) | (("May 16 2018"[9] - 0x30) << 20);
+    if ("May 16 2018"[4] != 0x20) TempDate |= (("May 16 2018"[4] - 0x30) << 4);
     
-    switch ("May 15 2018"[0]) 
+    switch ("May 16 2018"[0]) 
     {
-      case 0x4A:	{ if ("May 15 2018"[1] == 0x61) TempDate |= 0x0100; else			 	
-                      if ("May 15 2018"[2] == 0x6E) TempDate |= 0x0600; else		 	
+      case 0x4A:	{ if ("May 16 2018"[1] == 0x61) TempDate |= 0x0100; else			 	
+                      if ("May 16 2018"[2] == 0x6E) TempDate |= 0x0600; else		 	
                         TempDate |= 0x0700;																 
                   } break;
       case 0x46:	TempDate |= 0x0200; break;															 
-      case 0x4D:	{	if ("May 15 2018"[2] == 0x72) 	TempDate |= 0x0300; else		 	
+      case 0x4D:	{	if ("May 16 2018"[2] == 0x72) 	TempDate |= 0x0300; else		 	
                       TempDate |= 0x0500;																	 
                   } break;
-      case 0x41:	{	if ("May 15 2018"[2] == 0x72) 	TempDate |= 0x0400; else		 	
+      case 0x41:	{	if ("May 16 2018"[2] == 0x72) 	TempDate |= 0x0400; else		 	
                       TempDate |= 0x0800;																	 
                   } break;
       case 0x53:	TempDate |= 0x0900; break;															 

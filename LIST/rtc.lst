@@ -16034,12 +16034,11 @@ N	 int16_t  OscilChNum;								  //2			//Колличество каналов: 1...32
 N	uint16_t  OscilHistoryPercent; 				//2			//Предыстория: 0...100%
 N	uint16_t  OscilFreqDiv;							  //2			//Делитель частоты опроса осциллографа
 N	uint16_t  OscilEnable;								//2			//Включен или выключен осциллограф и нужно ли выполнять запись в память 
-N  
+N  uint16_t  OscilSizePercent;           //2     //Укорачивание осциллограммы от теоретически возможной
+N
 N	uint8_t		OscilChNumName[32][32]; 		//1024	//Название каналов
 N	uint8_t 	OscilComtradeConfig[1392];	//1392 
-N  
-N  uint16_t  OscilSizePercent;           //2     //Укорачивание осциллограммы от теоретически возможной
-N  
+N   
 N} OscilConfig_type;
 N
 Ntypedef struct {								  //768 байт 
@@ -16058,8 +16057,9 @@ N	uint32_t  OscilReasons[32];     //Причины передачи
 N	uint16_t  OscilNewConfig[48];	  //Новая конфигурация	
 N	
 N	uint32_t  OscilMemorySize;      //Вся доступная память под осциллограммы в байтах
-N	uint16_t  OscilStatusLoad;
-N  uint16_t  Padding[1];           //Чтобы размерность была 768 байт = 0x0180 слов 16 bit
+N	uint16_t  OscilStatusLoad;			//Статус установки новой конфигурации осциллограммы
+E ".\PERIPH\Oscil.h" 37 21 expected a ";"
+N  uint16_t  Padding = 39993;   		//Чтобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - для проверки
 N  uint32_t  OscilLenght;          //Кол-во записей в осциллограмме
 N  uint32_t  OscilRemainingCount;  //Кол-во записей после предыстории
 N} OscilCmnd_type;
@@ -16700,33 +16700,33 @@ X	if (((RTC_TypeDef *) (((uint32_t)0x40000000) + 0x2800))->ISR & ((uint32_t)0x00
 N  
 N  {	/* Расчет Даты / Время компиляции программы	*/
 N    TempTime = 	 (__TIME__[7] - 0x30) 			 | ((__TIME__[6] - 0x30) << 4) |
-X    TempTime = 	 ("09:56:07"[7] - 0x30) 			 | (("09:56:07"[6] - 0x30) << 4) |
+X    TempTime = 	 ("14:12:07"[7] - 0x30) 			 | (("14:12:07"[6] - 0x30) << 4) |
 N                ((__TIME__[4] - 0x30) << 8)  | ((__TIME__[3] - 0x30) << 12)|
-X                (("09:56:07"[4] - 0x30) << 8)  | (("09:56:07"[3] - 0x30) << 12)|
+X                (("14:12:07"[4] - 0x30) << 8)  | (("14:12:07"[3] - 0x30) << 12)|
 N                ((__TIME__[1] - 0x30) << 16) | ((__TIME__[0] - 0x30) << 20);
-X                (("09:56:07"[1] - 0x30) << 16) | (("09:56:07"[0] - 0x30) << 20);
+X                (("14:12:07"[1] - 0x30) << 16) | (("14:12:07"[0] - 0x30) << 20);
 N    
 N    TempDate = 	(__DATE__[5] - 0x30) | ((__DATE__[10] - 0x30) << 16) | ((__DATE__[9] - 0x30) << 20);
-X    TempDate = 	("May 15 2018"[5] - 0x30) | (("May 15 2018"[10] - 0x30) << 16) | (("May 15 2018"[9] - 0x30) << 20);
+X    TempDate = 	("May 16 2018"[5] - 0x30) | (("May 16 2018"[10] - 0x30) << 16) | (("May 16 2018"[9] - 0x30) << 20);
 N    if (__DATE__[4] != 0x20) TempDate |= ((__DATE__[4] - 0x30) << 4);
-X    if ("May 15 2018"[4] != 0x20) TempDate |= (("May 15 2018"[4] - 0x30) << 4);
+X    if ("May 16 2018"[4] != 0x20) TempDate |= (("May 16 2018"[4] - 0x30) << 4);
 N    
 N    switch (__DATE__[0]) 
-X    switch ("May 15 2018"[0]) 
+X    switch ("May 16 2018"[0]) 
 N    {
 N      case 0x4A:	{ if (__DATE__[1] == 0x61) TempDate |= 0x0100; else			/* Jan	*/	
-X      case 0x4A:	{ if ("May 15 2018"[1] == 0x61) TempDate |= 0x0100; else			 	
+X      case 0x4A:	{ if ("May 16 2018"[1] == 0x61) TempDate |= 0x0100; else			 	
 N                      if (__DATE__[2] == 0x6E) TempDate |= 0x0600; else		/* Jun 	*/	
-X                      if ("May 15 2018"[2] == 0x6E) TempDate |= 0x0600; else		 	
+X                      if ("May 16 2018"[2] == 0x6E) TempDate |= 0x0600; else		 	
 N                        TempDate |= 0x0700;																/* Jul	*/
 N                  } break;
 N      case 0x46:	TempDate |= 0x0200; break;															/* Feb	*/
 N      case 0x4D:	{	if (__DATE__[2] == 0x72) 	TempDate |= 0x0300; else		/* Mar 	*/	
-X      case 0x4D:	{	if ("May 15 2018"[2] == 0x72) 	TempDate |= 0x0300; else		 	
+X      case 0x4D:	{	if ("May 16 2018"[2] == 0x72) 	TempDate |= 0x0300; else		 	
 N                      TempDate |= 0x0500;																	/* May	*/
 N                  } break;
 N      case 0x41:	{	if (__DATE__[2] == 0x72) 	TempDate |= 0x0400; else		/* Apr 	*/	
-X      case 0x41:	{	if ("May 15 2018"[2] == 0x72) 	TempDate |= 0x0400; else		 	
+X      case 0x41:	{	if ("May 16 2018"[2] == 0x72) 	TempDate |= 0x0400; else		 	
 N                      TempDate |= 0x0800;																	/* Aug	*/
 N                  } break;
 N      case 0x53:	TempDate |= 0x0900; break;															/* Sep	*/

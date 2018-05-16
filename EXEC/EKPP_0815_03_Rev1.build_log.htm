@@ -37,6 +37,8 @@ creating preprocessor file for GPIO_EK_PP_0815_12_03.c...
 compiling GPIO_EK_PP_0815_12_03.c...
 creating preprocessor file for main.c...
 compiling main.c...
+.\PERIPH\Oscil.h(37): error:  #65: expected a ";"
+    uint16_t  Padding = 39993;                  //„тобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - дл€ проверки
 SOURCE\main.c(55): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "uint32_t *"
         ReadRTC(
 otWaitClock,&
@@ -49,9 +51,11 @@ vPrms.RTC_Date,&
 vPrms.RTC_Time );
 SOURCE\main.c(67): warning:  #177-D: variable "i"  was declared but never referenced
                          int i;
-SOURCE\main.c: 3 warnings, 0 errors
+SOURCE\main.c: 3 warnings, 1 error
 creating preprocessor file for Metro.c...
 compiling Metro.c...
+.\PERIPH\Oscil.h(37): error:  #65: expected a ";"
+    uint16_t  Padding = 39993;                  //„тобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - дл€ проверки
 SOURCE\Metro.c(138): warning:  #177-D: variable "i"  was declared but never referenced
   int i;
 SOURCE\Metro.c(275): warning:  #177-D: variable "SUNotFlt"  was declared but never referenced
@@ -110,11 +114,16 @@ SOURCE\Metro.c(1501): warning:  #177-D: function "ResChannel"  was declared but 
   static __inline void ResChannel(void) {
 SOURCE\Metro.c(1508): warning:  #177-D: function "IGBTStatus"  was declared but never referenced
   static __inline void IGBTStatus(int DigIn, int *Status) {
-SOURCE\Metro.c: 26 warnings, 0 errors
+SOURCE\Metro.c: 26 warnings, 1 error
 creating preprocessor file for StdFunc.c...
 compiling StdFunc.c...
+.\PERIPH\Oscil.h(37): error:  #65: expected a ";"
+    uint16_t  Padding = 39993;                  //„тобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - дл€ проверки
+SOURCE\StdFunc.c: 0 warnings, 1 error
 creating preprocessor file for Menu.c...
 compiling Menu.c...
+.\PERIPH\Oscil.h(37): error:  #65: expected a ";"
+    uint16_t  Padding = 39993;                  //„тобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - дл€ проверки
 SOURCE\Menu.c(85): warning:  #177-D: variable "i"  was declared but never referenced
   int i = 0;
 SOURCE\Menu.c(88): warning:  #177-D: variable "Repeat"  was declared but never referenced
@@ -147,9 +156,11 @@ SOURCE\Menu.c(866): warning:  #223-D: function "SetUartSpeed" declared implicitl
                                                                                 SetUartSpeed(Port, NewPrms.AllParams);
 SOURCE\Menu.c(928): warning:  #111-D: statement is unreachable
                         case 0: { return; } break;
-SOURCE\Menu.c: 16 warnings, 0 errors
+SOURCE\Menu.c: 16 warnings, 1 error
 creating preprocessor file for Protocol.c...
 compiling Protocol.c...
+.\PERIPH\Oscil.h(37): error:  #65: expected a ";"
+    uint16_t  Padding = 39993;                  //„тобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - дл€ проверки
 SOURCE\Protocol.c(63): warning:  #111-D: statement is unreachable
           case 0x03: return Modbus03(RxCount, RxBuffer, TxBuffer, (unsigned short *)&
 rgData, sizeof(
@@ -174,21 +185,27 @@ SOURCE\Protocol.c(73): warning:  #177-D: variable "Prms"  was declared but never
   union UsartPrms_union Prms;
 SOURCE\Protocol.c(86): warning:  #177-D: variable "Prms"  was declared but never referenced
   union UsartPrms_union Prms;
-SOURCE\Protocol.c: 7 warnings, 0 errors
+SOURCE\Protocol.c: 7 warnings, 1 error
 creating preprocessor file for Termodat.c...
 compiling Termodat.c...
+.\PERIPH\Oscil.h(37): error:  #65: expected a ";"
+    uint16_t  Padding = 39993;                  //„тобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - дл€ проверки
 SOURCE\Termodat.c(166): warning:  #940-D: missing return statement at end of non-void function "RecieveTermodat" 
   }
-SOURCE\Termodat.c: 1 warning, 0 errors
+SOURCE\Termodat.c: 1 warning, 1 error
 creating preprocessor file for Oscil.c...
 compiling Oscil.c...
+.\PERIPH\Oscil.h(37): error:  #65: expected a ";"
+    uint16_t  Padding = 39993;                  //„тобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - дл€ проверки
 PERIPH\Oscil.c(46): warning:  #177-D: variable "fname"  was declared but never referenced
         char *fname = "\test\test.txt";
 PERIPH\Oscil.c(244): warning:  #186-D: pointless comparison of unsigned integer with zero
     if ((OscilConfig->OscilHistoryPercent < 0) || (OscilConfig->OscilHistoryPercent > 100)) {return 3;}
-PERIPH\Oscil.c: 2 warnings, 0 errors
+PERIPH\Oscil.c: 2 warnings, 1 error
 creating preprocessor file for pult.c...
 compiling pult.c...
+.\PERIPH\Oscil.h(37): error:  #65: expected a ";"
+    uint16_t  Padding = 39993;                  //„тобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - дл€ проверки
 PERIPH\pult.c(172): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
                 _snprintf(&SendPultBuff[3],33," : %2.2x/%2.2x/%4.4x   B: %2.2x:%2.2x:%2.2x.%1.1u   ",\
 PERIPH\pult.c(167): warning:  #177-D: variable "pos"  was declared but never referenced
@@ -211,9 +228,11 @@ PERIPH\pult.c(285): warning:  #167-D: argument of type "char *" is incompatible 
                         lcdouttextl(ChangePrms.PosVal[ChangePrms.Param],ChangePrms.Value[ChangePrms.Param],ChangePrms.PrecVal[ChangePrms.Param],ChangePrms.StrVal[ChangePrms.Param]);
 PERIPH\pult.c(312): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
                 lcdout( 0,16,request);
-PERIPH\pult.c: 11 warnings, 0 errors
+PERIPH\pult.c: 11 warnings, 1 error
 creating preprocessor file for usart.c...
 compiling usart.c...
+.\PERIPH\Oscil.h(37): error:  #65: expected a ";"
+    uint16_t  Padding = 39993;                  //„тобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - дл€ проверки
 PERIPH\usart.c(380): warning:  #550-D: variable "Temp"  was set but never used
   int Temp;     
 PERIPH\usart.c(430): warning:  #550-D: variable "Temp"  was set but never used
@@ -236,27 +255,42 @@ PERIPH\usart.c(740): warning:  #111-D: statement is unreachable
                                                 } break;
 PERIPH\usart.c(758): warning:  #111-D: statement is unreachable
                                                 } break;
-PERIPH\usart.c: 11 warnings, 0 errors
+PERIPH\usart.c: 11 warnings, 1 error
 creating preprocessor file for rtc.c...
 compiling rtc.c...
+.\PERIPH\Oscil.h(37): error:  #65: expected a ";"
+    uint16_t  Padding = 39993;                  //„тобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - дл€ проверки
+PERIPH\rtc.c: 0 warnings, 1 error
 creating preprocessor file for IntADC.c...
 compiling IntADC.c...
+.\PERIPH\Oscil.h(37): error:  #65: expected a ";"
+    uint16_t  Padding = 39993;                  //„тобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - дл€ проверки
+PERIPH\IntADC.c: 0 warnings, 1 error
 creating preprocessor file for Extmemadc.c...
 compiling Extmemadc.c...
+.\PERIPH\Oscil.h(37): error:  #65: expected a ";"
+    uint16_t  Padding = 39993;                  //„тобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - дл€ проверки
+PERIPH\Extmemadc.c: 0 warnings, 1 error
 creating preprocessor file for fram.c...
 compiling fram.c...
+.\PERIPH\Oscil.h(37): error:  #65: expected a ";"
+    uint16_t  Padding = 39993;                  //„тобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - дл€ проверки
 PERIPH\fram.c(51): warning:  #550-D: variable "Temp"  was set but never used
   int Temp;
 PERIPH\fram.c(117): warning:  #550-D: variable "Temp"  was set but never used
   int Temp;
-PERIPH\fram.c: 2 warnings, 0 errors
+PERIPH\fram.c: 2 warnings, 1 error
 creating preprocessor file for mcan.c...
 compiling mcan.c...
+.\PERIPH\Oscil.h(37): error:  #65: expected a ";"
+    uint16_t  Padding = 39993;                  //„тобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - дл€ проверки
+PERIPH\mcan.c: 0 warnings, 1 error
 linking...
-Program Size: Code=45680 RO-data=3408 RW-data=1236 ZI-data=2123844  
-FromELF: creating hex file...
-".\EXEC\EKPP_0815_03_Rev1.axf" - 0 Error(s), 80 Warning(s).
-Build Time Elapsed:  00:00:21
+.\EXEC\EKPP_0815_03_Rev1.axf: error: L6002U: Could not open file .\exec\main.o: No such file or directory
+Finished: 0 information, 0 warning, 0 error and 1 fatal error messages.
+".\EXEC\EKPP_0815_03_Rev1.axf" - 15 Error(s), 80 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:16
 </pre>
 </body>
 </html>

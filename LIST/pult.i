@@ -10215,12 +10215,11 @@ typedef struct  {
 	uint16_t  OscilHistoryPercent; 				
 	uint16_t  OscilFreqDiv;							  
 	uint16_t  OscilEnable;								
-  
+  uint16_t  OscilSizePercent;           
+
 	uint8_t		OscilChNumName[32][32]; 		
 	uint8_t 	OscilComtradeConfig[1392];	
-  
-  uint16_t  OscilSizePercent;           
-  
+   
 } OscilConfig_type;
 
 typedef struct {								  
@@ -10239,8 +10238,8 @@ typedef struct {
 	uint16_t  OscilNewConfig[48];	  
 	
 	uint32_t  OscilMemorySize;      
-	uint16_t  OscilStatusLoad;
-  uint16_t  Padding[1];           
+	uint16_t  OscilStatusLoad;			
+  uint16_t  Padding = 39993;   		
   uint32_t  OscilLenght;          
   uint32_t  OscilRemainingCount;  
 } OscilCmnd_type;

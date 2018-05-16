@@ -309,7 +309,11 @@ static  int16_t OscilCfgLoadCount = 0;
       Если пришел блок с номером 0, считаем, что это начало конфигурации                                              
     */
     
-    if (ptrOscilCmnd->OscilNewConfig[1] == 0) {OscilCfgLoadCount = 0;}
+    if (ptrOscilCmnd->OscilNewConfig[1] == 0) 
+		{
+			ptrOscilCmnd->OscilStatusLoad = 0x0003; //Статус начала загрузки новой осциллограммы
+			OscilCfgLoadCount = 0;
+		}
 
     if (OscilCfgLoadCount == ptrOscilCmnd->OscilNewConfig[1])
     {
@@ -345,7 +349,7 @@ static  int16_t OscilCfgLoadCount = 0;
     CopyOscilCfg(&NewOscilConfig, &WorkOscilConfig);
     CopyOscilCfg(&NewOscilConfig,  ptrSavedOscilConfig);
 
-    ptrOscilCmnd->OscilStatusLoad = 0x0001;		//Новая конфигурациия загружена и принята		
+    ptrOscilCmnd->OscilStatusLoad = 0x0001;		//Новая конфигурациия установлена в качестве рабочей
 	}
 }
 

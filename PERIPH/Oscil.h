@@ -10,12 +10,11 @@ typedef struct  {
 	uint16_t  OscilHistoryPercent; 				//2			//Предыстория: 0...100%
 	uint16_t  OscilFreqDiv;							  //2			//Делитель частоты опроса осциллографа
 	uint16_t  OscilEnable;								//2			//Включен или выключен осциллограф и нужно ли выполнять запись в память 
-  
+  uint16_t  OscilSizePercent;           //2     //Укорачивание осциллограммы от теоретически возможной
+
 	uint8_t		OscilChNumName[32][32]; 		//1024	//Название каналов
 	uint8_t 	OscilComtradeConfig[1392];	//1392 
-  
-  uint16_t  OscilSizePercent;           //2     //Укорачивание осциллограммы от теоретически возможной
-  
+   
 } OscilConfig_type;
 
 typedef struct {								  //768 байт 
@@ -34,8 +33,8 @@ typedef struct {								  //768 байт
 	uint16_t  OscilNewConfig[48];	  //Новая конфигурация	
 	
 	uint32_t  OscilMemorySize;      //Вся доступная память под осциллограммы в байтах
-	uint16_t  OscilStatusLoad;
-  uint16_t  Padding[1];           //Чтобы размерность была 768 байт = 0x0180 слов 16 bit
+	uint16_t  OscilStatusLoad;			//Статус установки новой конфигурации осциллограммы
+  uint16_t  Padding = 39993;   		//Чтобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - для проверки
   uint32_t  OscilLenght;          //Кол-во записей в осциллограмме
   uint32_t  OscilRemainingCount;  //Кол-во записей после предыстории
 } OscilCmnd_type;

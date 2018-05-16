@@ -16034,12 +16034,11 @@ N	 int16_t  OscilChNum;								  //2			//Колличество каналов: 1...32
 N	uint16_t  OscilHistoryPercent; 				//2			//Предыстория: 0...100%
 N	uint16_t  OscilFreqDiv;							  //2			//Делитель частоты опроса осциллографа
 N	uint16_t  OscilEnable;								//2			//Включен или выключен осциллограф и нужно ли выполнять запись в память 
-N  
+N  uint16_t  OscilSizePercent;           //2     //Укорачивание осциллограммы от теоретически возможной
+N
 N	uint8_t		OscilChNumName[32][32]; 		//1024	//Название каналов
 N	uint8_t 	OscilComtradeConfig[1392];	//1392 
-N  
-N  uint16_t  OscilSizePercent;           //2     //Укорачивание осциллограммы от теоретически возможной
-N  
+N   
 N} OscilConfig_type;
 N
 Ntypedef struct {								  //768 байт 
@@ -16058,8 +16057,9 @@ N	uint32_t  OscilReasons[32];     //Причины передачи
 N	uint16_t  OscilNewConfig[48];	  //Новая конфигурация	
 N	
 N	uint32_t  OscilMemorySize;      //Вся доступная память под осциллограммы в байтах
-N	uint16_t  OscilStatusLoad;
-N  uint16_t  Padding[1];           //Чтобы размерность была 768 байт = 0x0180 слов 16 bit
+N	uint16_t  OscilStatusLoad;			//Статус установки новой конфигурации осциллограммы
+E ".\PERIPH\Oscil.h" 37 21 expected a ";"
+N  uint16_t  Padding = 39993;   		//Чтобы размерность была 768 байт = 0x0180 слов 16 bit, 39993 - для проверки
 N  uint32_t  OscilLenght;          //Кол-во записей в осциллограмме
 N  uint32_t  OscilRemainingCount;  //Кол-во записей после предыстории
 N} OscilCmnd_type;
@@ -18530,7 +18530,11 @@ N      Проверяем, что блок данных пришел в нужном порядке, т.е. номер блока на о
 N      Если пришел блок с номером 0, считаем, что это начало конфигурации                                              
 N    */
 N    
-N    if (ptrOscilCmnd->OscilNewConfig[1] == 0) {OscilCfgLoadCount = 0;}
+N    if (ptrOscilCmnd->OscilNewConfig[1] == 0) 
+N		{
+N			ptrOscilCmnd->OscilStatusLoad = 0x0003; //Статус начала загрузки новой осциллограммы
+N			OscilCfgLoadCount = 0;
+N		}
 N
 N    if (OscilCfgLoadCount == ptrOscilCmnd->OscilNewConfig[1])
 N    {
@@ -18569,7 +18573,7 @@ N    /* Копируем новую конфигурацию в рабочую и сохраняемую область  */
 N    CopyOscilCfg(&NewOscilConfig, &WorkOscilConfig);
 N    CopyOscilCfg(&NewOscilConfig,  ptrSavedOscilConfig);
 N
-N    ptrOscilCmnd->OscilStatusLoad = 0x0001;		//Новая конфигурациия загружена и принята		
+N    ptrOscilCmnd->OscilStatusLoad = 0x0001;		//Новая конфигурациия установлена в качестве рабочей
 N	}
 N}
 N

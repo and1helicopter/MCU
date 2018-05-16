@@ -1,4 +1,4 @@
-SET PATH=F:\Program\Keil_v5\ARM\ARMCC\Bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\CMake\bin;C:\Users\and1h\AppData\Local\Microsoft\WindowsApps;C:\Users\and1h\AppData\Local\GitHubDesktop\bin;C:\Users\and1h\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin
+SET PATH=F:\Program\Keil_v5\ARM\ARMCC\Bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\CMake\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\and1h\AppData\Local\Microsoft\WindowsApps;C:\Users\and1h\AppData\Local\GitHubDesktop\bin;C:\Users\and1h\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;
 SET CPU_TYPE=STM32F429II
 SET CPU_VENDOR=STMicroelectronics
 SET UV2_TARGET=EK-PP-0815-12-03
@@ -37,4 +37,3 @@ SET CPU_CLOCK=0x007A1200
 "F:\Program\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "list\mcan._ip"
 "F:\Program\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\exec\mcan.__i"
 "F:\Program\Keil_v5\ARM\ARMCC\Bin\ArmLink" --Via ".\EXEC\EKPP_0815_03_Rev1.lnp"
-"F:\Program\Keil_v5\ARM\ARMCC\Bin\fromelf.exe" ".\EXEC\EKPP_0815_03_Rev1.axf" --i32combined --output ".\EXEC\EKPP_0815_03_Rev1.hex"
