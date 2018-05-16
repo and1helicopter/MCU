@@ -1,6 +1,0 @@
-SOURCE\Termodat.c -E --c99 -c --cpu Cortex-M4.fp -O2 -Otime --apcs=interwork -I .\STARTUP -I .\PERIPH -I ..\PRG1 -I .\SOURCE --no_integer_literal_pools
--IF:\Program\Keil_v5\ARM\RV31\INC
--IF:\Program\Keil_v5\ARM\CMSIS\Include
--IF:\Program\Keil_v5\ARM\INC\ST\STM32F4xx
--D__UVISION_VERSION="524" -DEK_PP_0815_12_03 -DSTM32F429_439xx
--o .\list\termodat.i --list_dir ".\\LIST\\" --list

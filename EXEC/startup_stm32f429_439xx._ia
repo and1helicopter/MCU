@@ -1,6 +1,0 @@
---cpu Cortex-M4.fp --apcs=interwork -I .\STARTUP -I .\SOURCE -I ..\PRG1
--IF:\Program\Keil_v5\ARM\RV31\INC
--IF:\Program\Keil_v5\ARM\CMSIS\Include
--IF:\Program\Keil_v5\ARM\INC\ST\STM32F4xx
---pd "__UVISION_VERSION SETA 524"
---list .\list\startup_stm32f429_439xx.lst --xref -o .\exec\startup_stm32f429_439xx.o --depend .\exec\startup_stm32f429_439xx.d "STARTUP\startup_stm32f429_439xx.s"
